@@ -1,0 +1,76 @@
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-buttons .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .info p{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding: 30px 20px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-item-grid {
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+  
+  .image-item-1,
+  .image-item-2,
+  .image-item-3,
+  .image-item-4 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .image-item-grid {
+    min-height: 250px;
+  }
+
+  .faq {
+    padding: 30px 20px;
+  }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+}

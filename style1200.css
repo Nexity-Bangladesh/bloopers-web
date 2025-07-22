@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+  nav {
+    margin: 10px auto;
+    padding: 0 30px;
+  }
+
+  .hero-content {
+    left: 150px;
+  }
+
+  .image-transformer {
+    display: none; /* hide extra layers on smaller screens */
+  }
+}

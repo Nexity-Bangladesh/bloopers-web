@@ -1,0 +1,121 @@
+
+
+@media (max-width: 990px) {
+   nav {
+        position: fixed;
+        top: 30px;
+        width: 90%;
+        padding: 0 15px;
+
+    }
+
+    .nav-links-container {
+        display: block;
+        position: absolute;
+        top: 80px; 
+        right: -150%;
+        z-index: 990;
+        width: 100%;
+        height: 300px;
+        background: radial-gradient(circle,rgba(10, 10, 10, 0.9) 0%, rgba(22, 22, 22, 0.72) 100%);
+        transition: right 0.3s ease;
+        border-radius: 50px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-bar-resp-open{
+        right: 0%;
+    }
+
+    .nav-links {
+        display: block;
+        right: 0%;
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: bottom 1.6s ease-in;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cta-buttons.desktop-cta {
+        display: none;
+    }
+
+    .mobile-cta {
+        display: block;
+    }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    left: 0;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    height: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+  .image-item-1,
+  .image-item-2,
+  .image-item-3,
+  .image-item-4 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
