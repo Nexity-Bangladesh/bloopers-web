@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <nav class="light-nav">
+    <nav class="" id="navbar">
     <div class="logo">
-        <img src="logo.png" alt="Bloopers Logo" transform="scale(0.4)">
+        <img src="logo-dr.png" alt="Bloopers Logo" id="nav-logo"/>
     </div>
     <div class="hamburger" id="hamburger">
         &#9776;
@@ -37,7 +37,7 @@
     
 </nav>
 
-    <section class="hero dark">
+    <section class="hero dark" id="hero-section">
         <div class="hro-container">
             <div class="hero-content">
                 <h1>Unlock Rapid Social Media Growth with Viral Content That Gets Results</h1>
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <section id="about" class="about light">
+    <section id="about-section" class="about light">
         <div class="about-container">
             <div class="info">
                 <p>Signature Club specialises in creating viral content that cuts through digital noise and makes an
@@ -111,7 +111,7 @@
         </div>
     </section>
 
-    <section class="results dark">
+    <section class="results dark" id="results-section">
         <div class="container">
             <div class="results-content">
                 <div class="title-block-res"></div>
@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services-section" class="services">
         <div class="container">
             <div class="heading">
 
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <section id="faq" class="faq">
+    <section id="faq-section" class="faq">
     <div class="container">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
@@ -272,67 +272,8 @@
 </section>
 
 
-    <script>
-    document.querySelectorAll('.faq-question').forEach(button => {
-        button.addEventListener('click', () => {
-            const item = button.parentElement;
-            item.classList.toggle('active');
-        });
-    });
-
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links-container');
-
-    hamburger.addEventListener('click', (e) => {
-        e.stopPropagation(); 
-        navLinks.classList.toggle('nav-bar-resp-open');
-        console.log('Hamburger clicked');
-    });
-
-    
-    document.addEventListener('click', (e) => {
-    const isClickInsideNav = navLinks.contains(e.target);
-    const isClickOnHamburger = hamburger.contains(e.target);
-
-    if (!isClickInsideNav && !isClickOnHamburger) {
-        navLinks.classList.remove('nav-bar-resp-open');
-    }
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-    const nav = document.querySelector('nav');
-    const sections = document.querySelectorAll('section');
-
-    window.addEventListener('scroll', () => {
-        let currentSection = null;
-
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            const midpoint = window.innerHeight / 2;
-
-            if (rect.top <= midpoint && rect.bottom >= midpoint) {
-                currentSection = section;
-            }
-        });
-
-        if (currentSection) {
-            const isDark = currentSection.classList.contains('dark');
-            const isLight = currentSection.classList.contains('light');
-
-
-            nav.classList.remove('dark', 'light');
-
-
-            if (isDark) {
-                nav.classList.add('dark');
-            } else if (isLight) {
-                nav.classList.add('light');
-            }
-        }
-    });
-});
-    
-    </script>
+    <script src="script.js"></script>
+    <script src="nav-script.js"></script>
 </body>
 
 </html>
