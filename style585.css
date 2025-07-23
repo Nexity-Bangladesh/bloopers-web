@@ -1,0 +1,22 @@
+@media (max-width: 585px) {
+    .image-transformer {
+    width: 35%;
+  }
+
+  .transform-a {
+  top: 10%;
+  right: 360px;
+
+}
+
+.transform-b {
+  top: 10%;
+  right: 50px;
+
+}
+
+.transform-c {
+  top: -300px;
+  right: -100px;
+}
+}

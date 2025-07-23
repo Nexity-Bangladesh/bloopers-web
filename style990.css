@@ -65,22 +65,45 @@
         display: block;
     }
 
-  .hero {
+  .hro-container {
     flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 60px 20px;
+    align-items: center;
   }
 
   .hero-content {
-    left: 0;
-    align-items: center;
-    max-width: 100%;
+    flex: 1 1 50%;
+    text-align: left;
+    margin-right: 80px;
   }
 
-  .hero-image {
-    display: none;
+   .image-wrapper {
+    margin: 0;
   }
+
+  .image-transformer {
+    width: 40%;
+    height: auto;
+    box-shadow: none;
+    transition: none;
+  }
+.transform-a {
+  top: 4%;
+  right: 20px;
+
+}
+
+.transform-b {
+  top: -22%;
+  right: -120px;
+
+}
+
+.transform-c {
+  top: -300px;
+  right: -250px;
+}
+
+
 
   .about-section {
     flex-direction: column;

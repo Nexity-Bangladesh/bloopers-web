@@ -8,6 +8,27 @@
     font-size: 16px;
   }
 
+.image-transformer {
+    width: 40%;
+  }
+
+  .transform-a {
+  top: 20%;
+  right: 120px;
+
+}
+
+.transform-b {
+  top: 0%;
+  right: -50px;
+
+}
+
+.transform-c {
+  top: -200px;
+  right: -200px;
+}
+
   .cta-buttons .btn {
     padding: 10px 20px;
     font-size: 14px;
