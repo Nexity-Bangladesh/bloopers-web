@@ -1,22 +1,27 @@
 @media (max-width: 585px) {
+  .hro-container {
+  margin: 50px auto 0;
+
+}
+
     .image-transformer {
     width: 36%;
   }
 
   .transform-a {
   top: 5%;
-  right: 360px;
+  right: 300px;
 
 }
 
 .transform-b {
-  top: 8%;
+  top: 20%;
   right: 50px;
 
 }
 
 .transform-c {
-  top: -300px;
-  right: -150px;
+  top: -200px;
+  right: -70px;
 }
 }
