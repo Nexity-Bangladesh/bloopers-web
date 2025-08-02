@@ -78,7 +78,7 @@ nav .nav-links{
 }
 
 nav .nav-links li{
-
+    margin-left: 30px;
     color: inherit;
 }
 .nav-a{
