@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloopers</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="style990.css">
-    <link rel="stylesheet" href="style768.css">
-    <link rel="stylesheet" href="style585.css">
-    <link rel="stylesheet" href="style480.css">
+    <link rel="stylesheet" href="stylesheet/keyframe.css">
+    <!--<link rel="stylesheet" href="stylesheet/anim.css">-->
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="stylesheet/style990.css">
+    <link rel="stylesheet" href="stylesheet/style768.css">
+    <link rel="stylesheet" href="stylesheet/style585.css">
+    <link rel="stylesheet" href="stylesheet/style480.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -25,10 +27,10 @@
 
     <div class="nav-links-container" id="nav-links-container">
         <ul class="nav-links" id="nav-links">
-            <li><a class="nav-a nav-a-light" id="nav-l" href="#about">About</a></li>
-            <li><a class="nav-a nav-a-light" id="nav-l" href="#benefits">Benefits</a></li>
-            <li><a class="nav-a nav-a-light" id="nav-l" href="#services">Services</a></li>
-            <li><a class="nav-a nav-a-light" id="nav-l" href="#faq">FAQ</a></li>
+            <li><a class="nav-a nav-a-light" id="nav-l" href="#about-section">About</a></li>
+            <li><a class="nav-a nav-a-light" id="nav-l" href="#results-section">Benefits</a></li>
+            <li><a class="nav-a nav-a-light" id="nav-l" href="#create-section">Services</a></li>
+            <li><a class="nav-a nav-a-light" id="nav-l" href="#faq-section">FAQ</a></li>
         </ul>
     </div>
     
@@ -37,17 +39,24 @@
     <section class="hero dark" id="hero-section">
   <div class="hro-container">
     <div class="hero-content">
-      <h1>Unlock Rapid Social Media Growth with Viral Content That Gets Results</h1>
-      <p>We specialise in crafting bold, attention-grabbing campaigns designed to go viral and drive real engagement.</p>
+      <h1>GO <span>BOLD</span> OR GET <span>SCROLLED</span>.</h1>
+      <div class="hero-mid-context">
+        <p>Your Brand's Ticket to Internet Stardom.</p>
+        </div>
+
+      <p>In a world full of noise, we make sure your brand gets heard, seen, shared and remembered.
+            Let's turn your vibe into viral.</p>
+
+        
       <div class="cta-buttons">
         <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
         <a href="#services" class="btn btn-outline">View Packages</a>
       </div>
     </div>
     <div class="image-wrapper">
-      <img class="image-transformer transform-a" src="./vtst.jpg" alt="Hero Image">
-      <img class="image-transformer transform-b" src="./vtst.jpg" alt="Hero Image">
-      <img class="image-transformer transform-c" src="./vtst.jpg" alt="Hero Image">
+      <img class="image-transformer transform-a" src="images/2.jpg" alt="Hero Image">
+      <img class="image-transformer transform-b" src="images/3.jpg" alt="Hero Image">
+      <img class="image-transformer transform-c" src="images/1.jpg" alt="Hero Image">
     </div>
   </div>
 </section>
@@ -55,40 +64,39 @@
     <section id="about-section" class="about light">
         <div class="about-container">
             <div class="info">
-                <p>Signature Club specialises in creating viral content that cuts through digital noise and makes an
-                    impact. Our expert team drives real, measurable growth and turns your brand into a sensation.</p>
+                <p class="animation-on-scroll" data-animation="fade-in">At Bloopers, we craft bold, strategic content that doesn't just grab attention; it keeps it. From launch to lift-off, we help your brand rise above the digital clutter and stay top of mind.</p>
             </div>
             <div class="abcontainer">
                 <div class="about-section">
                     <div class="about-left">
-                        <h2>Our Mission</h2>
+                        <h2 class="animation-on-scroll" data-animation="slide-in">Our Mission</h2>
                     </div>
                     <div class="about-right">
-                        <p>Helping brands go viral, we craft strategies and content that capture attention, spark
+                        <p class="animation-on-scroll" data-animation="slide-in">Helping brands go viral, we craft strategies and content that capture attention, spark
                             conversations, and build momentum.</p>
                     </div>
                 </div>
                 <div class="about-section">
                     <div class="about-left">
-                        <h2>In Numbers</h2>
+                        <h2 class="animation-on-scroll" data-animation="slide-in">In Numbers</h2>
 
                     </div>
                     <div class="about-right">
                         <div class="stats">
                             <div class="stat-item">
-                                <h3>2B+</h3>
+                                <h3 class="animation-on-scroll" data-animation="slide-up">2B+</h3>
                                 <p>Views Generated</p>
                             </div>
                             <div class="stat-item">
-                                <h3>100+</h3>
+                                <h3 class="animation-on-scroll" data-animation="slide-up">100+</h3>
                                 <p>Viral Campaigns</p>
                             </div>
                             <div class="stat-item">
-                                <h3>98%</h3>
+                                <h3 class="animation-on-scroll" data-animation="slide-up">98%</h3>
                                 <p>Client Satisfaction</p>
                             </div>
                             <div class="stat-item">
-                                <h3>1000%</h3>
+                                <h3 class="animation-on-scroll" data-animation="slide-up">1000%</h3>
                                 <p>Engagement Increase</p>
                             </div>
                         </div>
@@ -113,36 +121,35 @@
         </div>
 
         <div class="result-grid">
-            <div class="result-item">
-                <h3>Viral Campaigns</h3>
-                <p>We have launched over 1000 successful viral campaigns that have significantly boosted brand
-                    visibility and engagement.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Go Viral in 90 Days</h3>
+                <p>We craft bold campaigns that get your brand seen, shared, and talked about - fast. Viral isn't luck, it's strategy.</p>
             </div>
-            <div class="result-item">
-                <h3>Engagement Increase</h3>
-                <p>Our strategies have led to an average engagement increase of 1000% across various platforms.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Increase Conversions</h3>
+                <p>We design content and funnels that guide your audience from 'just looking' to 'just bought.</p>
             </div>
-            <div class="result-item">
-                <h3>Engagement Increase</h3>
-                <p>Our strategies have led to an average engagement increase of 1000% across various platforms.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Boost Sales Fast</h3>
+                <p>We kickstart your sales with high-impact campaigns that bring in results — quickly and consistently</p>
             </div>
-            <div class="result-item">
-                <h3>Engagement Increase</h3>
-                <p>Our strategies have led to an average engagement increase of 1000% across various platforms.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Grow Customer Base</h3>
+                <p>We help you attract real people who connect with your brand and stick around for the long haul.</p>
             </div>
-            <div class="result-item">
-                <h3>Engagement Increase</h3>
-                <p>Our strategies have led to an average engagement increase of 1000% across various platforms.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Timely Delivery</h3>
+                <p>We respect your deadlines and deliver exactly what you need, when you need it - no excuses.</p>
             </div>
-            <div class="result-item">
-                <h3>Engagement Increase</h3>
-                <p>Our strategies have led to an average engagement increase of 1000% across various platforms.</p>
+            <div class="result-item" class="animation-on-scroll" data-animation="fade-in">
+                <h3>Enhance Brand Perception</h3>
+                <p>We shape how the world sees your brand -making it sharper, stronger, and impossible to ignore.</p>
             </div>
         </div>
         </div>
     </section>
 
-    <section id="services-section" class="services">
+    <!--<section id="services-section" class="services">
         <div class="container">
             <div class="heading">
 
@@ -192,6 +199,16 @@
             </div>
 
         </div>
+    </section> -->
+
+    <section id="create-section" class="creates">
+
+        <div class="creates-box">
+            <h1 class="animation-on-scroll" data-animation="fade-in">Your Dream Project Starts Here</h1>
+            <p class="animation-on-scroll" data-animation="fade-in">From concept to launch, we're all in. Let's collaborate, create, and crush it.</p>
+            <a class="btn" class="animation-on-scroll" data-animation="fade-in" >Contact Us</a>
+        </div>
+
     </section>
 
     <section id="faq-section" class="faq">
@@ -199,9 +216,9 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-list">
             <div class="faq-item">
-                <button class="faq-question">What is Signature Club?</button>
+                <button class="faq-question">What is Bloopers?</button>
                 <div class="faq-answer">
-                    <p>Signature Club is a digital marketing agency that specializes in creating viral content and campaigns that drive engagement and growth for brands.</p>
+                    <p>Bloopers is a digital marketing agency that specializes in creating viral content and campaigns that drive engagement and growth for brands.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -261,6 +278,7 @@
 
 
     <script src="script.js"></script>
+    <script src="animate.js"></script>
     <script src="nav-script.js"></script>
 </body>
 

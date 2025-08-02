@@ -1,0 +1,46 @@
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-container {
+    padding: 50px 20px;
+  }
+
+  .image-item-grid .text-overlay {
+    padding: 15px;
+  }
+
+  .image-item-grid h3 {
+    font-size: 1.5rem;
+  }
+
+  .image-item-grid p {
+    font-size: 1rem;
+  }
+
+  .results {
+    padding: 60px 20px;
+  }
+
+  .services .container .heading h2 {
+    font-size: 32px;
+  }
+
+  .faq .container .faq-list .faq-item h3 {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+}
