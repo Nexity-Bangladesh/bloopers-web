@@ -77,6 +77,17 @@
     min-height: 250px;
   }
 
+  .creates-box{
+    width: 100%;
+    height: 500px;
+    min-width: fit-content;
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: none;
+
+}
+
+
   .faq {
     padding: 30px 20px;
   }

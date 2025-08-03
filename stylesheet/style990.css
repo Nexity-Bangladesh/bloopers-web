@@ -138,6 +138,13 @@
     grid-column: auto;
     grid-row: auto;
   }
+
+  .creates-box{
+    width: 80%;
+    min-width: fit-content;
+
+}
+
   .footer .container {
     flex-direction: column;
     align-items: flex-start;

@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const navBottom = navRect.bottom;
 
         for (const section of sections) {
+            if (!section.el) continue;
             const rect = section.el.getBoundingClientRect();
             if (navBottom >= rect.top && navBottom <= rect.bottom) {
                 navbar.classList.remove('light-nav', 'dark-nav');

@@ -1,12 +1,16 @@
 @media (max-width: 480px) {
+    .hro-container {
+       margin: 25px auto 0;
+    }
+  
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 44px;
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 22px;
   }.hero-content p:last-of-type {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .cta-buttons {
@@ -29,6 +33,27 @@
   .image-item-grid p {
     font-size: 1rem;
   }
+
+      .image-transformer {
+    width: 30%;
+  }
+
+.transform-a {
+  top: 5%;
+  right: 250px;
+
+}
+
+.transform-b {
+  top: -10%;
+  right: -10px;
+
+}
+
+.transform-c {
+  top: -400px;
+  right: -30px;
+}
 
   .results {
     padding: 60px 20px;
