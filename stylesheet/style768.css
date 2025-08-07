@@ -80,13 +80,29 @@
   .creates-box{
     width: 100%;
     height: 500px;
-    min-width: fit-content;
-    border-radius: 0px;
     border: 0px;
+    border-radius: 0px;
     box-shadow: none;
-
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    background-color: #eeeeee;
+    color: #270c41;
 }
 
+.creates-box h1{
+    font-weight: bolder;
+    letter-spacing: -1px;
+}
+
+.creates-box p{
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+.creates-box .btn{
+    background-color: #270c41;
+    color: white;
+}
 
   .faq {
     padding: 30px 20px;

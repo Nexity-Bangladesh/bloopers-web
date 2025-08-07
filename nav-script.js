@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { el: section_about, class: 'dark-nav', name: 'About' },
         { el: section_result, class: 'light-nav', name: 'Results' },
         { el: section_services, class: 'dark-nav', name: 'Services' },
-        { el: section_faq, class: 'light-nav', name: 'FAQ' },
         { el: section_creates, class: 'light-nav', name: 'Results' },
+        { el: section_faq, class: 'dark-nav', name: 'FAQ' },
     ];
 
     function updateNavbarTheme() {

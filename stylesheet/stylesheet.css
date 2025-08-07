@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: inherit;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +28,7 @@
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9300a7;
+  background: #6a008a;
 }
 
 
@@ -84,18 +86,19 @@ nav .nav-links li{
 }
 .nav-a{
     text-decoration: none;
-    font-size: 16px;;
-    font-weight: 500;
+
+    font-size: 16px;
+    font-weight: 400;
     color: inherit;
 }
 
 .dark{
-    background-color: #131313;
+    background-color: #270c41;
     color: #f1f1f1;
 }
 
 .light{
-    background-color: #ffffff;
+    background-color: #f2e1f5;
     color: #0f0f0f;
 }
 
@@ -139,6 +142,7 @@ nav .cta-buttons a{
     width: 100%;
     height: 780px;
     padding-top: 120px;
+
 }
 
 .hro-container {
@@ -147,7 +151,7 @@ nav .cta-buttons a{
   margin: 120px auto 0;
   padding: 0 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   min-height: 500px;
   color: white;
@@ -155,8 +159,7 @@ nav .cta-buttons a{
 
 
 .hero-content {
-  max-width: 550px;
-  margin-right: 80px;
+  margin: 0px auto;
   z-index: 10;
 }
     .hero-content h1{
@@ -173,14 +176,9 @@ nav .cta-buttons a{
         display: block;
         margin: 20px auto;
     }
-
-    .hero-content h1 span:first-child{
+    
+    .hero-content h1 span{
         background: -webkit-linear-gradient(85deg,#02ff74, #00f7ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .hero-content h1 span:last-child{
-        background: -webkit-linear-gradient(85deg,#ff2002, #ea00ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -209,6 +207,7 @@ nav .cta-buttons a{
 
     .hero-content .cta-buttons{
         display: flex;
+        justify-content: center;
         gap: 20px;
     }
     .hero-content .cta-buttons .btn{
@@ -320,7 +319,7 @@ nav .cta-buttons a{
     gap: 56px;
     height: min-content;
     justify-content: center;
-    max-width: 1440px;
+    max-width: 1240px;
     overflow: visible;
     padding: 80px 60px;
     position: relative;
@@ -339,7 +338,7 @@ nav .cta-buttons a{
     overflow: visible;
     padding: 0;
     position: relative;
-    width: 100%;
+    width: 80%;
 }
 .about-left{
     width: 20%;
@@ -352,8 +351,8 @@ nav .cta-buttons a{
     color:#333;
 }
 .about-left h2{
-    font-size: 16px;
-    font-weight: light;
+    font-size: 25px;
+    font-weight: bold;
 }
 .stats{
     display: grid;
@@ -370,11 +369,15 @@ nav .cta-buttons a{
     font-size: 52px;
     color: #333;
     margin-bottom: 10px;
-    background: linear-gradient(to bottom, #8437ff, #a478fc21);
+    background: linear-gradient(to bottom, #6a008a, #6a008a3b);
       -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color:transparent;
+}
+.stats .stat-item p{
+    letter-spacing: -0.5px;
+    font-size: 20px;
 }
 
 .results {
@@ -388,14 +391,14 @@ nav .cta-buttons a{
 }
 .results .container{
     display: flex;
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .results-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 40px;
   width: 100%;
   padding: 0 20px;
@@ -403,10 +406,21 @@ nav .cta-buttons a{
   margin-bottom: 100px;
 }
 
+.upper-title-bar{
+    width: 100%;
+    max-width: 600px;
+}
+
+.upper-title-bar h3{
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
 .title-block-res {
   width: 100%;
   max-width: 600px;
 }
+
 
 .context-block-res {
   width: 100%;
@@ -414,12 +428,23 @@ nav .cta-buttons a{
 }
 
 .results-content h2 {
-  font-size: 46px;
-  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1em;
+  letter-spacing: -1.5px;
+}
+.results-content h2 span{
+    display: inline-block;
+    height: 60px;
+    padding: 0 5px;
+    background-color: white;
+    color: #270c41;
+    font-weight: 600;
 }
 
 .context-block-res p{
-    margin-top: 160px;
+    margin-top: 200px;
+    font-size: 20px;
 }
 
 .result-grid{
@@ -557,10 +582,10 @@ nav .cta-buttons a{
 
 .creates-box{
     display: flex;
-    width: 60%;
+    width: 50%;
     min-width: fit-content;
     height: 350px;
-    background: radial-gradient(circle,rgba(20, 15, 84, 1) 0%, rgba(5, 0, 36, 1) 97%);
+    background-color: #270c41;
     color: white;
     margin: 0 auto;
     padding: 40px;
