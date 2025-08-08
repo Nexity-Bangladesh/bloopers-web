@@ -38,7 +38,7 @@ html, body{
     user-select: none;
 }
 h1,h2,h3,h4,h5,h6,a,p{
-    font-family: "Commissioner", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 nav{
@@ -138,32 +138,35 @@ nav .cta-buttons a{
 }
 
 .hero{
-    display: block;
+    display: flex;
     width: 100%;
     height: 780px;
-    padding-top: 120px;
-
+    padding-top: 0px;
+    background-image : url('../images/background.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .hro-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 120px auto 0;
-  padding: 0 40px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  width: fit-content;
   min-height: 500px;
   color: white;
+  gap: 40px; 
+  margin: 0 auto;
 }
-
 
 .hero-content {
-  margin: 0px auto;
-  z-index: 10;
+  flex: 2;
+
 }
+
     .hero-content h1{
-        font-size: 60px;
+        font-size: 50px;
         line-height: 1.2;
         font-weight: bold;
         font-family: "Commissioner", sans-serif;
@@ -206,8 +209,6 @@ nav .cta-buttons a{
 
 
     .hero-content .cta-buttons{
-        display: flex;
-        justify-content: center;
         gap: 20px;
     }
     .hero-content .cta-buttons .btn{
@@ -221,16 +222,20 @@ nav .cta-buttons a{
         color: #000000;
         border: none;
     }
-    .hero-content .cta-buttons .btn.btn-outline{
-        background-color: transparent;
-        color: #ffffff;
-        border: 2px solid #ffffff;
-    }
-    .hero-content .cta-buttons .btn.btn-outline:hover {
-        background-color: #ffffff;
-        color: #000000;
-    }
 
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 
 .image-wrapper {
   position: relative;
@@ -239,54 +244,12 @@ nav .cta-buttons a{
   perspective: 1500px;
 }
 
-.hero-image {
-    display: block;
-}
-    .hero-image img {
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.1)
-            0px 4px 30px 0px, rgba(0, 0, 0, 0.1) 0px 10px 20px -10px;
-        width: 280px;
-        height: 420px;
+
+.hero-image img {
+        margin-top: 50px;
+        width: auto;
+        height: 520px;
     }
-.image-transformer {
-  position: absolute;
-  width: 280px;
-  height: 420px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  user-select: none;
-  cursor: default;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-.transform-a {
-  top: 140px;
-  right: 270px;
-  z-index: 4;
-  transform: rotateY(0deg) rotateX(12deg) rotateZ(15deg);
-  transform-origin: center center;
-  animation: image-slide-a 1s ease 0s forwards;
-}
-
-.transform-b {
-  top: 0;
-  right: 120px;
-  z-index: 3;
-  transform: rotateY(0deg) rotateX(20deg) rotateZ(-6deg);
-  transform-origin: center center;
-  animation: image-slide-b 1.3s ease 0s forwards;
-}
-
-.transform-c {
-  top: -100px;
-  right: -50px;
-  z-index: 1;
-  transform: rotateY(-35deg) rotateX(5deg) rotateZ(10deg);
-  transform-origin: center center;
-  animation: image-slide-c 1.6s ease 0s forwards;
-}
 
 .about-container{
     display: flex;
@@ -347,7 +310,7 @@ nav .cta-buttons a{
     width: 60%;
 }
 .about-right p{
-    font-size: 26px;
+    font-size: 1.4em;
     color:#333;
 }
 .about-left h2{
@@ -393,6 +356,7 @@ nav .cta-buttons a{
     display: flex;
     width: 80%;
     margin: 0 auto;
+    align-items: flex-end;
 }
 
 .results-content {
@@ -425,6 +389,7 @@ nav .cta-buttons a{
 .context-block-res {
   width: 100%;
   max-width: 800px;
+  margin-bottom: 100px;
 }
 
 .results-content h2 {
@@ -437,13 +402,14 @@ nav .cta-buttons a{
     display: inline-block;
     height: 60px;
     padding: 0 5px;
+    padding-right: 10px;
     background-color: white;
     color: #270c41;
     font-weight: 600;
 }
 
 .context-block-res p{
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     font-size: 20px;
 }
 
@@ -483,91 +449,6 @@ nav .cta-buttons a{
     margin-top:10px;
     font-weight: light;
     transition: color 0.4s ease;
-}
-
-
-.services {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-    padding: 50px 80px;
-    margin-bottom: 50px;
-}
-.services .container .heading{
-    display: block;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.services .container .heading h2{
-    font-size: 46px;
-    margin-bottom: 20px;
-    color: #000000;
-}
-.services .container .heading p{
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #2d363b;
-    font-weight: semi-bold;
-}
-
-.image-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
-    height: 640px;
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-}
-
-.image-item-grid{
-    position: relative;
-    overflow: hidden;
-}
-.image-item-grid img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-.image-item-grid .text-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  color: rgb(235, 235, 235);
-  z-index: 2;
-  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-.image-item-grid h3,
-.image-item-grid p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.image-item-1 {
-    grid-column: span 2 / span 2;
-}
-
-.image-item-2 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-}
-
-.image-item-3 {
-    grid-row-start: 2;
-}
-
-.image-item-4 {
-    grid-row-start: 2;
 }
 
 

@@ -8,25 +8,17 @@
     font-size: 16px;
   }
 
-.image-transformer {
-    width: 40%;
-  }
-
-  .transform-a {
-  top: 20%;
-  right: 120px;
-
+  .hro-container {
+  padding: 0 50px;
 }
 
-.transform-b {
-  top: 0%;
-  right: -50px;
-
+.hero-content {
+  flex: 1;
 }
 
-.transform-c {
-  top: -200px;
-  right: -200px;
+.hero-image {
+  flex: 1;
+  max-width: 50%;
 }
 
   .cta-buttons .btn {
