@@ -261,7 +261,8 @@ nav .cta-buttons a{
     height: fit-content;
     background-color: #ffffff;
     padding: 50px;
-    margin-top:80px
+    padding-top:120px;
+    margin-bottom: 10px
 }
 .info{
   width: 80%;
@@ -459,7 +460,7 @@ nav .cta-buttons a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: #eeeeee ;
 }
 

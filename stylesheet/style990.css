@@ -29,18 +29,21 @@
     }
 
     .nav-links {
-        display: block;
+        display: flex;
         right: 0%;
         height: fit-content;
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
         transition: bottom 1.6s ease-in;
+        justify-content: space-around;
+        padding: 20px;
         z-index: 999;
     }
 
-    .nav-links li {
+    nav .nav-links li {
         margin: 20px 0px;
+        margin-left: 0px;
         font-weight: bold;
     }
     .nav-links li a{
@@ -48,7 +51,6 @@
         font-size: 15;
         font-style: bold;
     }
-
     .nav-links.open {
         right: 0;
     }
